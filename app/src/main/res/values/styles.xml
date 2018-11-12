@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/YellowTaxi</item>
+        <item name="colorPrimaryDark">@color/YellowTaxi</item>
+        <item name="colorAccent">@color/YellowTaxi</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/YellowTaxi</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">30sp</item>
+    </style>
+
+    <style name="BeforeEditTextTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginRight">20sp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_height">50sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/edit_round</item>
+        <item name="android:paddingLeft">20sp</item>
+    </style>
+
+    <style name="GetTaxiBtn">
+        <item name="android:layout_marginTop">15sp</item>
+        <item name="android:layout_height">80sp</item>
+        <item name="android:layout_width">200sp</item>
+        <item name="android:background">@drawable/button_round</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:padding">20sp</item>
+
+
+    </style>
+
+
+
+</resources>

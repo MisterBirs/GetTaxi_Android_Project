@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBackGround"
+    tools:context=".controller.MainActivity">
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp">
+
+
+    <TextView
+        android:text="@string/newRide"
+        style="@style/Title"/>
+
+
+    <TextView
+        style="@style/BeforeEditTextTitle"
+        android:text="@string/phoneNumber"/>
+    <EditText
+        android:inputType="phone"
+        style="@style/EditTextStyle"
+        android:drawableLeft="@drawable/ic_phone_black_30dp"/>
+    <TextView
+    style="@style/BeforeEditTextTitle"
+    android:text="@string/email"/>
+    <EditText
+        style="@style/EditTextStyle"
+        android:drawableLeft="@drawable/ic_email_black_30dp"/>
+    <TextView
+        style="@style/BeforeEditTextTitle"
+        android:text="@string/travelDestination"/>
+    <EditText
+        style="@style/EditTextStyle"
+        android:drawableLeft="@drawable/ic_location_on_black_30dp"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120sp"
+        android:layout_weight="0"
+        android:gravity="center">
+
+        <Button
+            style="@style/GetTaxiBtn"
+            android:text="@string/inviteTaxi"
+            android:drawableLeft="@drawable/ic_local_taxi_black_40dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+    
+
+</android.support.constraint.ConstraintLayout>
