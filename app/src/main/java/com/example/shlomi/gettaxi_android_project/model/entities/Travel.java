@@ -5,11 +5,16 @@ import java.util.Date;
 public class Travel {
 
     //region Fields
+    private static int idCounter = 0;
+    protected int id;
     protected TravelStatus status;
     protected String sourceLocation;
     protected String destinationLocation;
     protected Date startTime;
     protected Date endTime;
+
+
+
     protected String customerName;
     protected String customerPhone;
     protected String customerEmail;
@@ -24,9 +29,19 @@ public class Travel {
         this.customerName = customerName;
         this.customerPhone = customerPhone;
         this.customerEmail = customerEmail;
+        this.id = idCounter++;
     }
+    public Travel(){}
     //endregion
     //region Seters and Geters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public TravelStatus getStatus() {
         return status;
     }

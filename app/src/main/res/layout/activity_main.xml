@@ -24,6 +24,7 @@
         style="@style/BeforeEditTextTitle"
         android:text="@string/phoneNumber"/>
     <EditText
+        android:id="@+id/phoneNumberEditText"
         android:inputType="phone"
         style="@style/EditTextStyle"
         android:drawableLeft="@drawable/ic_phone_black_30dp"/>
@@ -31,12 +32,14 @@
     style="@style/BeforeEditTextTitle"
     android:text="@string/email"/>
     <EditText
+        android:id="@+id/emailEditText"
         style="@style/EditTextStyle"
         android:drawableLeft="@drawable/ic_email_black_30dp"/>
     <TextView
         style="@style/BeforeEditTextTitle"
         android:text="@string/travelDestination"/>
     <EditText
+        android:id="@+id/destinationEditText"
         style="@style/EditTextStyle"
         android:drawableLeft="@drawable/ic_location_on_black_30dp"/>
     
@@ -47,10 +50,12 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/inviteTaxiBtn"
             style="@style/GetTaxiBtn"
             android:text="@string/inviteTaxi"
             android:drawableLeft="@drawable/ic_local_taxi_black_40dp"
             android:gravity="center"
+            android:onClick="inviteTaxiBtnOnClick"
             />
     </LinearLayout>
 
