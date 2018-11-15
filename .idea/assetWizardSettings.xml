@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_taxi_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_my_location_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,12 +29,12 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="252228" />
-                            <entry key="height" value="40" />
+                            <entry key="height" value="30" />
                             <entry key="opacityPercent" value="95" />
-                            <entry key="outputName" value="ic_local_taxi_black_40dp" />
+                            <entry key="outputName" value="ic_my_location_black_30dp" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\Shlomi" />
-                            <entry key="width" value="40" />
+                            <entry key="width" value="30" />
                           </map>
                         </option>
                       </PersistentState>
