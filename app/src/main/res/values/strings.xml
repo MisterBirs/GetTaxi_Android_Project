@@ -7,10 +7,7 @@
     <string name="currentLocation">מיקום נוכחי</string>
     <string name="travelDestination">יעד נסיעה</string>
     <string name="inviteTaxi">הזמן מונית</string>
-    
-
-
-
+    <string name="IAmPassenger">אני נוסע</string>
 
 
 </resources>
