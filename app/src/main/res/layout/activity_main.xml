@@ -18,21 +18,24 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_weight="0"
+        android:orientation="vertical"
         android:gravity="center">
 
         <Button
-            android:id="@+id/inviteTaxiBtn"
-            style="@style/GetTaxiBtn"
+            style="@style/MainActivityBtn"
             android:text="@string/IAmPassenger"
-            android:drawableLeft="@drawable/ic_local_taxi_black_40dp"
+            android:drawableLeft="@drawable/ic_passenger_black_70"
             android:gravity="center"
             android:onClick="toPassengerActivity"
             />
-
-
-
-
-
+        <Button
+            style="@style/MainActivityBtn"
+            android:text="@string/IAmDriver"
+            android:drawableLeft="@drawable/ic_taxi_black_70dp"
+            android:gravity="center"
+            android:onClick="toDriverActivity"
+            android:layout_marginTop="20sp"
+            />
     </LinearLayout>
 
 

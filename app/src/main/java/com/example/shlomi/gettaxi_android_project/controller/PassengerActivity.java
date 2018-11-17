@@ -44,7 +44,7 @@ public class PassengerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customer);
+        setContentView(R.layout.activity_passenger);
         initializeFields();
         getLocation();
     }
@@ -81,7 +81,7 @@ public class PassengerActivity extends AppCompatActivity {
         travel.setDestinationLocation(destinationEditText.getText().toString());
         return travel;
     }
-    protected void inviteTaxiBtnOnClick(View view) {
+    public void inviteTaxiBtnOnClick(View view) {
         Button inviteTaxiBtn = findViewById(R.id.inviteTaxiBtn);
         if(view == inviteTaxiBtn)
         {
@@ -132,7 +132,7 @@ public class PassengerActivity extends AppCompatActivity {
 
 
         } else {
-            // Android version is lesser than 6.0 or the permission is already granted.
+            // Android version is less than 6.0 or the permission is already granted.
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
         }
 
