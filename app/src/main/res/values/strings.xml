@@ -9,6 +9,16 @@
     <string name="inviteTaxi">הזמן מונית</string>
     <string name="IAmPassenger">אני נוסע</string>
     <string name="IAmDriver">אני נהג</string>
+    <string name="Login">התחברות</string>
+    <string name="UserName">שם משתמש</string>
+    <string name="Password">סיסמא</string>
+    <string name="ToLogin">התחבר</string>
+    <string name="signUp">הירשם</string>
+    <string name="registration">הרשמה</string>
+    <string name="firstName">שם פרטי</string>
+    <string name="lastName">שם משפחה</string>
+    <string name="idNumber">מספר תעודת זהות</string>
+    <string name="creditNumber">מספר אשראי</string>
 
 
 </resources>

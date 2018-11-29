@@ -3,20 +3,22 @@ package com.example.shlomi.gettaxi_android_project.model.entities;
 public class Driver {
     //region Fields
     protected int idNumber;
-     protected String firstName;
-     protected String lastName;
+     protected String name;
+    protected String password;
      protected int phoneNumber;
      protected String emailAdress;
     protected int creditNumber;
+
     //endregion
     //region Constrctor
-    public Driver(int idNumber, String firstName, String lastName, int phoneNumber, String emailAdress, int creditNumber) {
+    public Driver(){};
+    public Driver(int idNumber, String name,int phoneNumber, String emailAdress, int creditNumber, String password) {
         this.idNumber = idNumber;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.name = name;
         this.phoneNumber = phoneNumber;
         this.emailAdress = emailAdress;
         this.creditNumber = creditNumber;
+        this.password = password;
     }
     //endregion
     //region Set and Gets
@@ -28,21 +30,22 @@ public class Driver {
         this.idNumber = idNumber;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getPassword() {
+        return password;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getName() {
+        return name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String firstName) {
+        this.name = firstName;
     }
+
 
     public int getPhoneNumber() {
         return phoneNumber;

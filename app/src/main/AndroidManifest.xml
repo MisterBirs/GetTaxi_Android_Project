@@ -27,7 +27,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".controller.PassengerActivity" />
-        <activity android:name=".controller.DriverAuthentication"></activity>
+        <activity android:name=".controller.DriverAuthentication" />
+        <activity android:name=".controller.SignUp"></activity>
     </application>
 
 </manifest>

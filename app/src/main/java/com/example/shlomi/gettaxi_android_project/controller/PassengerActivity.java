@@ -30,7 +30,7 @@ public class PassengerActivity extends AppCompatActivity {
 
     //region Fields
     public Button inviteTaxiBtn;
-    protected ActivityDataBase2 activityDataBase;
+    protected ActivityDataBase activityDataBase;
     LocationManager locationManager;
     protected LocationListener locationListener;
     EditText nameEditText;
@@ -56,7 +56,7 @@ public class PassengerActivity extends AppCompatActivity {
         currentLocationEditText = (EditText) findViewById(R.id.currentLocationEditText);
         destinationEditText  = (EditText) findViewById(R.id.destinationEditText);
 
-        activityDataBase = new ActivityDataBase2();
+        activityDataBase = new ActivityDataBase();
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
         locationListener = new LocationListener() {
             public void onLocationChanged(Location location) {
@@ -89,7 +89,7 @@ public class PassengerActivity extends AppCompatActivity {
             activityDataBase.addTravel(travel);
         }
     }
-    protected class ActivityDataBase2{
+    protected class ActivityDataBase{
         protected void addTravel(Travel travel)
         {
             try {

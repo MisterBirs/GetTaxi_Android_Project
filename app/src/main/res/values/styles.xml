@@ -26,8 +26,17 @@
         <item name="android:layout_marginTop">3sp</item>
     </style>
 
-    <style name="EditTextStyle">
+    <style name="EditTextStyle_Height42sp">
         <item name="android:layout_height">42sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/edit_round</item>
+        <item name="android:paddingLeft">20sp</item>
+    </style>
+
+    <style name="EditTextStyle_Height35sp">
+        <item name="android:layout_height">35sp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textAlignment">center</item>
@@ -37,15 +46,14 @@
 
     <style name="MainActivityBtn">
         <item name="android:layout_height">120sp</item>
-        <item name="android:layout_width">300sp</item>
+        <item name="android:layout_width">270sp</item>
         <item name="android:background">@drawable/button_round</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textSize">50sp</item>
-        <item name="android:padding">20sp</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:padding">30sp</item>
     </style>
 
-
-    <style name="GetTaxiBtn">
+    <style name="Btn1">
         <item name="android:layout_marginTop">15sp</item>
         <item name="android:layout_height">70sp</item>
         <item name="android:layout_width">200sp</item>
@@ -55,6 +63,27 @@
         <item name="android:padding">20sp</item>
         <item name="android:layout_marginBottom">20sp</item>
     </style>
+
+    <style name="Btn2">
+        <item name="android:layout_height">60sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/button_round2</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="Btn3">
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:layout_height">50sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/button_round2</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">20sp</item>
+    </style>
+
+
 
 
 

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/DarkBackGround"
-    tools:context=".controller.PassengerActivity">
-
+    tools:context=".controller.SignUp">
 
     <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
@@ -16,46 +15,59 @@
         android:layout_marginRight="10sp">
 
         <TextView
-            android:text="@string/Login"
+            android:text="@string/registration"
             style="@style/Title"/>
 
         <TextView
             style="@style/BeforeEditTextTitle"
-            android:text="@string/name"/>
+            android:text="@string/idNumber"/>
         <EditText
-            android:id="@+id/NameEditText"
-            style="@style/EditTextStyle_Height42sp"
+            android:id="@+id/idNumberEditText"
+            android:inputType="number"
+            style="@style/EditTextStyle_Height35sp"
+            android:drawableLeft="@drawable/ic_id_30dp"/>
+
+        <TextView
+        style="@style/BeforeEditTextTitle"
+        android:text="@string/name"/>
+        <EditText
+            android:id="@+id/nameEditText"
+            style="@style/EditTextStyle_Height35sp"
             android:drawableLeft="@drawable/ic_person_black_30dp"/>
+
         <TextView
             style="@style/BeforeEditTextTitle"
             android:text="@string/phoneNumber"/>
         <EditText
             android:id="@+id/phoneNumberEditText"
             android:inputType="phone"
-            style="@style/EditTextStyle_Height42sp"
+            style="@style/EditTextStyle_Height35sp"
             android:drawableLeft="@drawable/ic_phone_black_30dp"/>
         <TextView
             style="@style/BeforeEditTextTitle"
             android:text="@string/email"/>
         <EditText
             android:id="@+id/emailEditText"
-            style="@style/EditTextStyle_Height42sp"
+            android:inputType="textEmailAddress"
+            style="@style/EditTextStyle_Height35sp"
             android:drawableLeft="@drawable/ic_email_black_30dp"/>
 
         <TextView
             style="@style/BeforeEditTextTitle"
-            android:text="@string/currentLocation"/>
+            android:text="@string/creditNumber"/>
         <EditText
-            android:id="@+id/currentLocationEditText"
-            style="@style/EditTextStyle_Height42sp"
-            android:drawableLeft="@drawable/ic_my_location_black_30dp"/>
+            android:id="@+id/creditNumberEditText"
+            android:inputType="number"
+            style="@style/EditTextStyle_Height35sp"
+            android:drawableLeft="@drawable/ic_credit_card_black_30dp"/>
         <TextView
             style="@style/BeforeEditTextTitle"
-            android:text="@string/travelDestination"/>
+            android:text="@string/Password"/>
         <EditText
-            android:id="@+id/destinationEditText"
-            style="@style/EditTextStyle_Height42sp"
-            android:drawableLeft="@drawable/ic_location_on_black_30dp"/>
+            android:id="@+id/passwordEditText"
+            style="@style/EditTextStyle_Height35sp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_key_black_30dp"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -64,17 +76,14 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/inviteTaxiBtn"
-                style="@style/Btn1"
-                android:text="@string/inviteTaxi"
-                android:drawableLeft="@drawable/ic_local_taxi_black_40dp"
-                android:gravity="center"
-                android:onClick="inviteTaxiBtnOnClick"
+                android:id="@+id/signUpBtnOfRegistration"
+                style="@style/Btn3"
+                android:text="@string/signUp"
+                android:onClick="signUpOnClick"
                 />
         </LinearLayout>
     </LinearLayout>
 
 
-
-
 </android.support.constraint.ConstraintLayout>
+
