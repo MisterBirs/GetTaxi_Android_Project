@@ -23,7 +23,7 @@
             style="@style/BeforeEditTextTitle"
             android:text="@string/email"/>
         <EditText
-            android:id="@+id/UserNameEditText"
+            android:id="@+id/emailEditText_DriverAuthentication"
             style="@style/EditTextStyle_Height42sp"
             android:inputType="textEmailAddress"
             android:drawableLeft="@drawable/ic_email_black_30dp"/>
@@ -31,7 +31,7 @@
             style="@style/BeforeEditTextTitle"
             android:text="@string/Password"/>
         <EditText
-            android:id="@+id/PasswordEditText"
+           android:id="@+id/myPasswordEditText_DriverAuthentication"
             android:inputType="textPassword"
             style="@style/EditTextStyle_Height42sp"
             android:drawableLeft="@drawable/ic_key_black_30dp"/>
@@ -50,6 +50,7 @@
                 android:layout_marginTop="10sp"
                 android:text="@string/ToLogin"
                 android:gravity="center"
+                android:onClick="loginOnClick"
                 />
             <Button
                 android:id="@+id/signUpBtnOfAuthentication"

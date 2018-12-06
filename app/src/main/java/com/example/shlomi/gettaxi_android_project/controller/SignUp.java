@@ -62,9 +62,9 @@ public class SignUp extends AppCompatActivity {
             try {
                 signUpBtn.setEnabled(false);
                 IDataBase dataBase = FactoryDataBase.getDataBase();
-                dataBase.addDriver(driver, new IDataBase.Action<Void>() {
+                dataBase.addDriver(driver, new IDataBase.Action() {
                     @Override
-                    public void onSuccess(Void obj) {
+                    public void onSuccess() {
                         Toast.makeText(getBaseContext(), "ההרשמה בוצעה בהצלחה", Toast.LENGTH_LONG).show();
                         signUpBtn.setEnabled(true);
                     }

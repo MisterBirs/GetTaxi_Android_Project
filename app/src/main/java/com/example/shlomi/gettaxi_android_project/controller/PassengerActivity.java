@@ -95,9 +95,9 @@ public class PassengerActivity extends AppCompatActivity {
             try {
                 inviteTaxiBtn.setEnabled(false);
                 IDataBase dataBase = FactoryDataBase.getDataBase();
-                dataBase.addTravel(travel, new IDataBase.Action<Void>() {
+                dataBase.addTravel(travel, new IDataBase.Action() {
                     @Override
-                    public void onSuccess(Void obj) {
+                    public void onSuccess() {
                         Toast.makeText(getBaseContext(), "הנסיעה הוספה בהצלחה", Toast.LENGTH_LONG).show();
                         inviteTaxiBtn.setEnabled(true);
                     }

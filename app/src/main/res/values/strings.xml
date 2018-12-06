@@ -19,6 +19,8 @@
     <string name="lastName">שם משפחה</string>
     <string name="idNumber">מספר תעודת זהות</string>
     <string name="creditNumber">מספר אשראי</string>
+    <string name="passwordIsIncorrect">הסיסמא שגויה</string>
+    <string name="userDoesNotExist">המתשמש לא קיים</string>
 
 
 </resources>

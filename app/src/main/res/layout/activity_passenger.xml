@@ -16,7 +16,7 @@
         android:layout_marginRight="10sp">
 
         <TextView
-            android:text="@string/Login"
+            android:text="@string/newRide"
             style="@style/Title"/>
 
         <TextView
