@@ -1,6 +1,8 @@
 package com.example.shlomi.gettaxi_android_project.controller;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +22,7 @@ public class DriverAuthentication extends AppCompatActivity {
     Button loginBtn;
     EditText emailEditText;
     EditText passwordEditText;
+    SharedPreferences sharedpreferences;
     //endregion
 
     @Override
@@ -27,6 +30,7 @@ public class DriverAuthentication extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_authentication);
         initializeFields();
+        fetchDataFromSharedPreferences();
     }
 
     protected void initializeFields(){
@@ -34,6 +38,22 @@ public class DriverAuthentication extends AppCompatActivity {
         loginBtn = (Button)findViewById(R.id.loginBtn);
         emailEditText = (EditText) findViewById(R.id.emailEditText_DriverAuthentication);
         passwordEditText = (EditText) findViewById(R.id.myPasswordEditText_DriverAuthentication);
+        sharedpreferences = getSharedPreferences("userPreferences", Context.MODE_PRIVATE);
+    }
+
+    protected void storeDataInSharedPreferences(){
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        editor.putString("email", emailEditText.getText().toString());
+        editor.putString("password", passwordEditText.getText().toString());
+        editor.commit();
+
+    }
+
+    protected void fetchDataFromSharedPreferences(){
+        if (sharedpreferences.contains("email"))
+            emailEditText.setText(sharedpreferences.getString("email", ""));
+        if (sharedpreferences.contains("password"))
+            passwordEditText.setText(sharedpreferences.getString("password", ""));
     }
 
     public void loginOnClick(View view){
@@ -45,6 +65,7 @@ public class DriverAuthentication extends AppCompatActivity {
                 @Override
                 public void onSuccess() {
                     loginBtn.setEnabled(true);
+                    storeDataInSharedPreferences();
                     Toast.makeText(getBaseContext(), "ההתחברת בהצלחה", Toast.LENGTH_LONG).show();
                 }
 
@@ -71,4 +92,6 @@ public class DriverAuthentication extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), SignUp.class);
         startActivity(intent);
     }
+
+
 }
